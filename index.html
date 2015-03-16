@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>A Maturity Model for Distributed Systems</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="A Maturity Model for Distributed Systems" />
+        <meta name="keywords" content="distributed systems maturity model"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    </head>
+    <style>
+        #content{
+            width:1750px;
+            margin:0 auto;
+        }
+    </style>
+    <body>
+<div class="bekk-logo-container" style="display: block;"><div class="bekk-logo"></div></div>
+        <div id="content">
+            <h1>A Maturity Model for Distributed Systems</h1>
+            
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col" abbr="Devops">Devops</th>
+                        <th scope="col" abbr="Organization">Organization</th>
+                        <th scope="col" abbr="Process">Process</th>
+                        <th scope="col" abbr="Architecture">Architecture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Advanced</th>
+                        <td><span class="topic">SLAs</span> are continously tested and monitored.
+                        <br>Everything runs on immutable servers or <span class="topic">containers</span>.
+                        <br>You can query a live <span class="topic">dependency graph</span> to see which applications are actively in use.
+                        <br>Your <span class="topic">infrastructure setup</span> is fully automated.
+                        </td>
+                        
+			<td>You mainly run <span class="topic">small projects</span>.
+                        <br>Your teams have a <span class="topic">far & near</span> organization.
+                        <br>Teams interact through a <span class="topic">customer/supplier relationship.
+                        </td>
+			
+			<td>Teams use <span class="topic">consumer driven contracts</span> and contiously gather feedback.
+			</td>
+                        
+			<td>You use <span class="topic">polyglot persistence</span> and <span class="topic">event sourcing</span> where it makes sense.
+                        <br>Well controlled transaction scopes, <span class="topic">idempotency</span> where possible.
+                        <br>You follow the <span class="topic">12 factor application</span> guidelines.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Intermediate</th>
+                        <td>Performance metrics, application metrics and health checks are displayed in <span class="topic">production dashboards</span>
+			<br>Most deploys involve <span class="topic">no downtime</span>. Server configuration is automated.
+                        </td>
+                        
+			<td>The organization acknowledges and accommodates <span class="topic">Conway's Law</span>.
+                        You strive for small teams.
+                        </td>
+                        
+			<td>Independent teams are all able to do <span class="topic">continuous delivery</span>.
+			Minimum Viable Bureaucracy is enforced.
+                        </td>
+                        
+			<td><span class="topic">Stateless applications</span>, that recover seamlessly after errors or downtime.
+                        <br>Automated failover and load balancing.
+                        <br><span class="topic">Service versioning</span> with automatic backwards compatibility testing.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baseline</th>
+                        <td>Applications are <span class="topic">automatically deployed</span>, and provide <span class="topic">health checks</span>.
+			<br>You do <span class="topic">centralized logging</span>.
+                        </td>
+
+                        <td><span class="topic">Co-located, cross-functional teams</span>.
+                        <br>Vertical splits, no silos.
+                        </td>
+
+                        <td>You use <span class="topic">continuous testing</span> and integration for all applications.
+                        <br>Your teams are <span class="topic">self-organized</span> and <span class="topic">goal-driven</span>.
+                        <br>Agile development is used throughout the organization.
+                        </td>
+                        
+			<td><span class="topic">Minimum viable standardization</span>, no more than necessary.
+                        <br>Applications find eachother through <span class="topic">service registry/discovery</span>.
+                        <br>When needed, you share code through tiny, functional utility libraries. No big shared framework.
+                        <br>Applications communicate through <span class="topic">simple protocols</span>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Big challenges</th>
+                        <td>Many <span class="topic">manual routines</span>.
+                        <br>A very few people are being held responsible for keeping the production environment live.
+                        </td>
+                        
+			<td><span class="topic">Handovers</span> of <span class="topic">big releases</span> between silos is the typical workflow.
+                        </td>
+                        
+			<td><span class="topic">Big releases</span> are put into production periodically.
+                        <br>Most projects are <span class="topic">fixed price projects<span>.
+                        </td>
+                        
+			<td>You have big <span class="topic">monolithic applications</span> or shared frameworks.
+                        <br>Architecture driven by a slow-to-change ESB.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

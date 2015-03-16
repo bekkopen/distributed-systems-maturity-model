@@ -1,0 +1,69 @@
+.bekk-logo-container {
+position: absolute;
+top: 0;
+left: 0;
+background-color: #000;
+height: 30px;
+width: 100%;
+text-align: center;
+}
+.bekk-logo {
+background: url(../Images/bekk_wht.png) no-repeat;
+display: inline-block;
+margin: 9px 0;
+height: 25px;
+width: 75px;
+}
+h1 {
+font-weight: normal;
+font-size: 36px;
+margin-bottom: 50px;
+margin-top: 100px;
+text-transform: uppercase;
+color: #fff;
+}
+body {
+font-family: Conduit ITC W01 Light,sans-serif;
+font-size: 15px;
+background-color: #262626;
+color: #999;
+overflow-y: scroll;
+}
+table.table1{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.table1 thead th{
+    padding:15px;
+    color:#fff;
+    background-color:#35bdb2;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tbody th{
+    color:#fff;
+    background-color:#35bdb2;
+    padding:0px 10px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.table1 tbody td{
+    padding:10px;
+    text-align:left;
+    vertical-align:top;
+    background-color:#fff;
+    border: 4px solid #ccc;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.table1 tbody td .topic{
+    font-style: italic;
+}
